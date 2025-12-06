@@ -152,7 +152,7 @@ sudo swapon /swapfile
 echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab
 ```
 
-## Güncel ve Yüklü mü Kontrol Et:
+## Paketler Güncel ve Yüklü mü Kontrol Et:
 
 ```bash
 python3 --version
