@@ -1,257 +1,180 @@
-# En Çok Kullanılan Linux Komutları (Node & VPS İçin)
+# Linux-Sık-Kullanılan-Komutlar.md
 
-Bu liste tamamen “node çalıştıran kullanıcılar” için hazırlanmıtır.
-Her komut **tek cümle ile ne işe yarar** şeklinde açıklanmıştır.
-
----
-
-## 1- Klasör & Dosya İşlemleri:
-
-```bash
-ls
-```
-
-- Bulunduğun klasördeki dosyaları listeler.
-
-```bash
-pwd
-```
-
-- Bulunduğun klasörün tam yolunu gösterir.
-
-```bash
-cd klasör
-```
-
-Bir klasöre girmeni sağlar.
-
-```bash
-mkdir klasör
-```
-
-Yeni klasör oluşturur.
-
-```bash
-rm -rf klasör
-```
-
-Klasörü içindekilerle birlikte siler (dikkat!).
-
-```bash
-touch dosya.txt
-```
-
-- Yeni boş dosya oluşturur.
-
-```bash
-nano dosya.txt
-```
-
-- Dosyayı düzenlemeni sağlar.
+Node kurarken en çok ihtiyacın olacak temel Linux komutları.
+Her komut tek satırda ve kısa açıklamalı.
 
 ---
 
-## 2- Paket Yönetimi
+## 1- Sunucuya Bağlanma:
 
 ```bash
-apt update
-apt upgrade -y
+ssh user@ip   #Sunucuya bağlan
 ```
-
-- Sistemi günceller (her zaman ilk yapılır).
 
 ```bash
-apt install paket
+whoami        #Hangi kullanıcıdayım
 ```
-
-- Bir program/paket yükler.
 
 ```bash
-apt remove paket
+passwd        #Şifre değiştir
 ```
-
-- Kurulu programı siler.
 
 ---
 
-## 3- Sistem & Kullanıcı:
+## 2- Sistem Güncelleme:
 
 ```bash
-sudo komut
+sudo apt update && sudo apt upgrade -y   #Tüm paketleri güncelle
 ```
-
-- Komutu yönetici olarak çalıştırır.
 
 ```bash
-whoami
+reboot        #Sunucuyu yeniden başlat
 ```
-
-- Şu an hangi kullanıcı olduğunu gösterir.
 
 ```bash
-htop
+shutdown now  #Sunucuyu kapat
 ```
 
-- CPU, RAM kullanımını canlı gösterir.
+---
+
+## 3- Dosya ve Klasör:
 
 ```bash
-free -h
+ls           #Bulunduğun dizindeki dosyalar
 ```
-
-- RAM kullanımını gösterir.
 
 ```bash
-df -h
+pwd          #Şu anki dizin
 ```
 
-- Disk kullanımını gösterir.
+```bash
+cd klasör    #Klasöre git
+```
+
+```bash
+mkdir test   #Klasör oluştur
+```
+
+```bash
+rm -rf test  #Klasör + içini sil (tehlikeli)
+```
+
+```bash
+nano text.txt #Dosyayı düzenle
+```
 
 ---
 
 ## 4- Servis & Log:
 
 ```bash
-systemctl status servis
+systemctl status servis   #Servis durumu
 ```
-
-- Servisin çalışıp çalışmadığını gösterir.
 
 ```bash
-systemctl restart servis
+systemctl restart servis  #Servisi yeniden başlat
 ```
-
-- Servisi yeniden başlatır.
 
 ```bash
-journalctl -xe
+journalctl -xe            #Hata loglarına bak
 ```
-
-- Hata loglarını gösterir.
 
 ```bash
-tail -f /var/log/syslog
+tail -f /var/log/syslog   #Canlı log oku
 ```
-
-- Canlı log okumanızı sağlar.
 
 ---
 
-## 6- Process / İşlem Yönetimi:
+## 5- Process Yönetimi:
 
 ```bash
-ps aux
+ps aux         #Çalışan işlemler
 ```
-
-- Açık olan tüm işlemleri gösterir.
 
 ```bash
-top
+kill PID       #Süreç sonlandır
 ```
-
-- CPU kullanan işlemleri listeler.
 
 ```bash
-kill PID
+top            #CPU kullanan işlemler
 ```
-
-- Bir işlemi kapatır.
 
 ---
 
-## 7- Port & Ağ
+## 6- Port & Ağ:
 
 ```bash
-lsof -i -P -n
+lsof -i         #Açık portları gör
 ```
-
-- Sistemdeki açık portları gösterir.
 
 ```bash
-lsof -i :80
+lsof -i :80     #80 portu kimde
 ```
-
-- 80 portunu hangi uygulama kullanıyor gösterir.
 
 ```bash
-ufw allow 3000
+ufw allow 3000  #Port aç
 ```
-
-- Port açar.
 
 ```bash
-ping google.com
+ping google.com #İnternet var mı
 ```
-
-- İnternete çıkış var mı test eder.
 
 ```bash
-curl site
+curl ifconfig.me #IP adresini öğren
 ```
-
-- Bir URL’den veri çeker.
 
 ---
 
-## 8- SSH & Kopyalama
+## 7- Docker:
 
 ```bash
-ssh user@ip
+docker ps                     #Çalışan container’lar
 ```
-
-- Sunucuya bağlanır.
 
 ```bash
-scp dosya user@ip:/hedef
+docker logs -f container      #Canlı log
 ```
 
-- Dosya kopyalar.
+```bash
+docker restart container      #Container’ı yeniden başlat
+```
+
+```bash
+docker stop container         #Container’ı durdur
+```
+
+```bash
+docker exec -it container bash #Container içine gir
+```
 
 ---
 
-## 9- Docker
+## 8- Sistem & Kaynak:
 
 ```bash
-docker ps
+free -h     #RAM kullanımını gör
 ```
-
-- Çalışan container’ları gösterir.
 
 ```bash
-docker logs -f container
+df -h       #Disk kullanımını gör
 ```
-
-- Container loglarını canlı gösterir.
 
 ```bash
-docker restart container
+htop        #CPU RAM canlı izleme
 ```
-
-- Container’ı yeniden başlatır.
 
 ```bash
-docker stop container
+ncdu        #Hangi klasör yer kaplıyor
 ```
-
-- Çalışan container’ı durdurur.
-
-```bash
-docker exec -it container bash
-```
-
-- Container içine terminal açar.
 
 ---
 
-## 10- Temizlik
+## 9- Temizlik:
 
 ```bash
-clear
+clear       #Ekranı temizle
 ```
-
-Terminal ekranını temizler.
 
 ```bash
-reboot
+history     #Geçmiş komutlar
 ```
-
-- Sunucuyu yeniden başlatır.
