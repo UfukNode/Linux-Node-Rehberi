@@ -226,3 +226,10 @@ screen -X -S ufuk quit   #Screen'i kapat
 - screen → işlemleri arka planda çalıştırır
 - terminal kapanınca işlem durmaz
 - node kurulumlarında şarttır
+
+---
+
+## ✅ Ek Kaynak:
+
+- Popüler Komutlara Buradan Ulaşabilirsiniz:
+[https://www.digitalocean.com/community/tutorials/linux-commands](https://www.digitalocean.com/community/tutorials/linux-commands)
