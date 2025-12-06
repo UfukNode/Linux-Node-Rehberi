@@ -1,4 +1,4 @@
-# Linux-Sık-Kullanılan-Komutlar.md
+# Node Kurarken Sık Kullanılan Komutlar:
 
 Node kurarken en çok ihtiyacın olacak temel Linux komutları.
 Her komut tek satırda ve kısa açıklamalı.
@@ -6,6 +6,8 @@ Her komut tek satırda ve kısa açıklamalı.
 ---
 
 ## 1- Sunucuya Bağlanma:
+
+Sunucuya bağlantı ve kullanıcı işlemleri.
 
 ```bash
 ssh user@ip   #Sunucuya bağlan
@@ -23,6 +25,8 @@ passwd        #Şifre değiştir
 
 ## 2- Sistem Güncelleme:
 
+Sistemi güncel tutmak ve yeniden başlatma işlemleri.
+
 ```bash
 sudo apt update && sudo apt upgrade -y   #Tüm paketleri güncelle
 ```
@@ -39,33 +43,33 @@ shutdown now  #Sunucuyu kapat
 
 ## 3- Dosya ve Klasör:
 
+Klasör oluşturma, içine girme, silme ve düzenleme.
+
 ```bash
 ls           #Bulunduğun dizindeki dosyalar
 ```
 
 ```bash
-pwd          #Şu anki dizin
+mkdir ufuk   #Klasör oluştur
 ```
 
 ```bash
-cd klasör    #Klasöre git
+cd ufuk    #Klasöre git
 ```
 
 ```bash
-mkdir test   #Klasör oluştur
+rm -rf ufuk  #Klasör + içini sil (tehlikeli)
 ```
 
 ```bash
-rm -rf test  #Klasör + içini sil (tehlikeli)
-```
-
-```bash
-nano text.txt #Dosyayı düzenle
+nano ufuk #Dosyayı düzenle
 ```
 
 ---
 
 ## 4- Servis & Log:
+
+Servis durumunu kontrol etmek ve log okumak.
 
 ```bash
 systemctl status servis   #Servis durumu
@@ -87,6 +91,8 @@ tail -f /var/log/syslog   #Canlı log oku
 
 ## 5- Process Yönetimi:
 
+Çalışan süreçleri görüntüleme ve sonlandırma.
+
 ```bash
 ps aux         #Çalışan işlemler
 ```
@@ -102,6 +108,8 @@ top            #CPU kullanan işlemler
 ---
 
 ## 6- Port & Ağ:
+
+Portları, bağlantıları ve internet erişimini kontrol etmek.
 
 ```bash
 lsof -i         #Açık portları gör
@@ -127,6 +135,8 @@ curl ifconfig.me #IP adresini öğren
 
 ## 7- Docker:
 
+Container yönetimi, log ve silme işlemleri.
+
 ```bash
 docker ps                     #Çalışan container’lar
 ```
@@ -144,12 +154,18 @@ docker stop container         #Container’ı durdur
 ```
 
 ```bash
+docker rm container           #Container sil
+```
+
+```bash
 docker exec -it container bash #Container içine gir
 ```
 
 ---
 
 ## 8- Sistem & Kaynak:
+
+RAM, disk kullanımı ve sistem yükünü görmek.
 
 ```bash
 free -h     #RAM kullanımını gör
@@ -171,10 +187,38 @@ ncdu        #Hangi klasör yer kaplıyor
 
 ## 9- Temizlik:
 
+Terminal ekranını temizlemek ve önceki komutlara bakmak.
+
 ```bash
 clear       #Ekranı temizle
 ```
 
 ```bash
 history     #Geçmiş komutlar
+```
+
+---
+
+## 10- Screen:
+
+Node’ları kapatmadan terminalden çıkmak.
+
+```bash
+screen -S ufuk     #Yeni screen başlat
+```
+
+```bash
+screen -ls         #Açık screenleri listele
+```
+
+```bash
+screen -r ufuk     #Screen'e geri bağlan
+```
+
+```bash
+CTRL + A + D       #Screen'den çık (arka planda çalışsın)
+```
+
+```bash
+screen -X -S ufuk quit   #Screen'i kapat
 ```
