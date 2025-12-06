@@ -222,3 +222,7 @@ CTRL + A + D       #Screen'den çık (arka planda çalışsın)
 ```bash
 screen -X -S ufuk quit   #Screen'i kapat
 ```
+
+- screen → işlemleri arka planda çalıştırır
+- terminal kapanınca işlem durmaz
+- node kurulumlarında şarttır
