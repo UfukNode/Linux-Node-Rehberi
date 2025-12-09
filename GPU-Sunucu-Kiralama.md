@@ -60,17 +60,7 @@ Boundless veya benzeri GPU gerektiren node’lar için uygun konfigürasyona sah
 
 ![Adsız tasarım](https://github.com/user-attachments/assets/452408df-df90-481d-8999-abdec53de3e7)
 
-4. GPU seçimi: RTX 3090 ya da 4090 önerilir.
-
-   > Daha düşük kartlar da çalışır fakat hem hız hem performans çok düşer. Testnet için her zaman güçlü GPU önemlidir.
-
-5. Depolamayı **150-200 GB SSD** aralığına ayarla (NVMe önerilir).
-
-6. Sol üstteki sıralama menüsünden **Price (inc)** seçeneğini işaretle.
-
-   > Böylece fiyat/performans en iyi cihazları otomatik listelersin.
-
-7. İşine uygun cihazı seçip **Rent** butonuna bas.
+3. Görseldeki gibi filtreleyip, işine uygun cihazı seçip **Rent** butonuna bas.
 
 ![1](https://github.com/user-attachments/assets/29c2df12-340e-4aa9-adf9-d684398945a8)
 
@@ -86,4 +76,4 @@ Boundless veya benzeri GPU gerektiren node’lar için uygun konfigürasyona sah
 
 ---
 
-Bu bağlantı yöntemi; RunPod, TensorDock, Paperspace, Lambda vb. tüm GPU sağlayıcılarında benzer şekilde kullanılır. Mantık basit: SSH key oluştur, panele ekle ve terminalden bağlan.
+✅ Bu bağlantı yöntemi; RunPod, TensorDock, Paperspace, Lambda vb. tüm GPU sağlayıcılarında benzer şekilde kullanılır. Mantık basit: SSH key oluştur, panele ekle ve terminalden bağlan.
