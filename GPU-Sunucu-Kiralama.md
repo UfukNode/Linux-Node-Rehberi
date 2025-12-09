@@ -2,13 +2,11 @@
 
 Aşağıdaki sağlayıcılar node topluluklarında en çok kullanılan GPU kiralama platformlarıdır. Ödeme yöntemleri ve fiyatlar değişebilir ancak SSH bağlanma mantığı tümünde aynıdır.
 
-| Provider    | Payment Method       | Açıklama                                                  |
+| Sağlayıcı   | Ödeme Yöntemi        | Açıklama                                                  |
 | ----------- | -------------------- | --------------------------------------------------------- |
 | Vast.ai     | Kredi kartı / Kripto | En çok kullanılan; fiyat/performans açısından iyi seçenek |
 | RunPod      | Kredi kartı / Kripto | Hızlı kurulum, çok sayıda template                        |
 | TensorDock  | Kripto               | Uygun fiyat, anlık GPU bulma avantajı                     |
-| Paperspace  | Kredi kartı          | Stabil altyapı, gelişmiş dashboard                        |
-| Lambda Labs | Kredi kartı          | HPC ve güçlü GPU modelleri                                |
 
 Bu sağlayıcıların tamamında aşağıdaki adımlar neredeyse aynıdır:
 
