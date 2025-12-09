@@ -21,12 +21,12 @@ Bu repo, node kurulumuna başlamadan önce bu temel ihtiyaçları karşılayarak
 
 Bu rehber temel olarak aşağıdaki bölümlerden oluşuyor:
 
-1- VPS önerileri,
-2- VPS kiralama,
-3- MobaXterm ile bağlantı,
-4-- GPU cihaz kiralama ve sunucuya bağlantı,
-5- Linux başlangıç paketleri,
-6- Temel Linux komutları.
+1. VPS önerileri,
+2. VPS kiralama,
+3. MobaXterm ile bağlantı,
+4. GPU cihaz kiralama ve sunucuya bağlantı,
+5. Linux başlangıç paketleri,
+6. Temel Linux komutları.
 
 ---
 
