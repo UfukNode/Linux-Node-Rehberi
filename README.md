@@ -36,9 +36,12 @@ Node kurarken hata almak normaldir. Bu sürecin bir parçası olduğunu bilerek 
 Sorun çözmek için en verimli kaynaklar:
 
 * Proje sosyal medya hesapları,
-* ChatGPT veya Claude benzer AI modeller,
-* Rehberler.
+* [ChatGPT](https://chatgpt.com/) veya [Claude](https://claude.ai/) benzer AI modeller,
+* [Rehberler](https://github.com/UfukNode).
 
 Gördüğün hatalarda pes etmek yerine çözüm aramayı öğrenmek, sana hem öğretir hem de sorunu çözmene yardımcı olur.
 En büyük yardımcınız her zaman yapay zeka olsun.
 
+---
+
+✅ Bu rehberlere erkenden ulaşmak için [bağlantıdan](https://x.com/UfukDegen) X hesabımı takip edebilirsiniz.
