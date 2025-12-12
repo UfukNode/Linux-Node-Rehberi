@@ -27,7 +27,7 @@ Mantığı anlamanız için herhangi bir sağlayıcı üzerinden örnek gösteri
 Hangi sağlayıcıyı seçtiğiniz süreç açısından büyük bir fark yaratmaz.
 Panel isimleri değişebilir ama mantık hep aynıdır.
 
-Diyelim ki projede istenen sistem gereksinimleri şöyle olsun:
+Buraya ayrı bir rehber ekleyene kadar bu rehberden yararlanabilirsiniz: [Serverica Sunucu Kiralama](https://x.com/UfukDegen/status/1907125611518161247)
 
 ---
 
