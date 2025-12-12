@@ -6,9 +6,9 @@ Kullandığım VPS sağlayıcıları:
 
 | Sıra | Sağlayıcı | Ödeme Yöntemi     | Açıklama                                                             |
 | :--- | :-------- | :---------------- | :------------------------------------------------------------------- |
-| 2    | Contabo   | Kredi kartı       | Uygun fiyatlı ancak bazı node’larda bant genişliği sorunları yaşadık |
-| 3    | Hostbrr   | Kripto            | Fiyat/performans açısından dengeli                                   |
-| 4    | Netcup    | Kripto            | İyi performans, bazı ucuz paketler bulmak mümkün                     |
+| 2    | [Contabo](https://contabo.com/en/vps/)  | Kredi kartı       | Uygun fiyatlı ancak bazı node’larda bant genişliği sorunları yaşadık |
+| 3    | [Serverica](https://clients.servarica.com/)   | Kripto            | Fiyat/performans açısından dengeli                                   |
+| 4    | [Netcup](https://www.netcup.com/en/server/vps)    | Kripto            | İyi performans, bazı ucuz paketler bulmak mümkün                     |
 
 ---
 
