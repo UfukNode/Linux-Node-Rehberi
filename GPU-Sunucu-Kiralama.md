@@ -4,8 +4,8 @@ Aşağıdaki sağlayıcılar node topluluklarında en çok kullanılan GPU kiral
 
 | Sağlayıcı   | Ödeme Yöntemi        | Açıklama                                                  |
 | ----------- | -------------------- | --------------------------------------------------------- |
-| (Vast.ai)[https://cloud.vast.ai/?ref_id=222215]     | Kredi kartı / Kripto | En çok kullanılan; fiyat/performans açısından iyi seçenek |
-| (RunPod)[https://runpod.io?ref=5j0m7csw]      | Kredi kartı / Kripto | Hızlı kurulum, çok sayıda template                        |
+| [Vast.ai](https://cloud.vast.ai/?ref_id=222215)    | Kredi kartı / Kripto | En çok kullanılan; fiyat/performans açısından iyi seçenek |
+| [RunPod](https://runpod.io?ref=5j0m7csw)      | Kredi kartı / Kripto | Hızlı kurulum, çok sayıda template                        |
 
 Bu sağlayıcıların tamamında aşağıdaki adımlar neredeyse aynıdır:
 
