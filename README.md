@@ -21,11 +21,11 @@ Bu repo, node kurulumuna başlamadan önce bu temel ihtiyaçları karşılayarak
 
 Bu rehber temel olarak aşağıdaki bölümlerden oluşuyor:
 
-1. VPS önerileri, VPS kiralama,
+1. [VPS önerileri - VPS kiralama](https://github.com/UfukNode/Linux-Node-Rehberi/blob/main/VPS-Kiralama.md),
 2. MobaXterm ile bağlantı,
-3. GPU cihaz kiralama ve sunucuya bağlantı,
-4. Linux başlangıç paketleri,
-5. Temel Linux komutları.
+3. [GPU cihaz kiralama ve sunucuya bağlantı](https://github.com/UfukNode/Linux-Node-Rehberi/blob/main/GPU-Sunucu-Kiralama.md),
+4. [Linux başlangıç paketleri](https://github.com/UfukNode/Linux-Node-Rehberi/blob/main/linux-baslangic-paketleri.md)
+5. [Temel Linux komutları](https://github.com/UfukNode/Linux-Node-Rehberi/blob/main/linux-temel-komutlar.md)
 
 ---
 
