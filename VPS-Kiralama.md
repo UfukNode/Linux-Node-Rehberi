@@ -29,8 +29,6 @@ Panel isimleri değişebilir ama mantık hep aynıdır.
 
 Diyelim ki projede istenen sistem gereksinimleri şöyle olsun:
 
-*(Buraya proje örneği ekleyebilirsiniz. Ben rehberlerde proje bazlı öneri ekliyorum.)*
-
 ---
 
 # 4- VPS’e Nasıl Bağlanılır?
